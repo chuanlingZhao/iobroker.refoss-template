@@ -1,0 +1,175 @@
+{
+  "common": {
+    "name": "refoss-template",
+    "version": "0.0.1",
+    "news": {
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "uk": "Початкова версія",
+        "zh-cn": "首次出版"
+      }
+    },
+    "titleLang": {
+      "en": "RefossTemaplate",
+      "de": "Vorlage (JavaScript)",
+      "ru": "Шаблон (JavaScript)",
+      "pt": "Modelo (JavaScript)",
+      "nl": "Sjabloon (JavaScript)",
+      "fr": "Modèle (JavaScript)",
+      "it": "Modello (JavaScript)",
+      "es": "Plantilla (JavaScript)",
+      "pl": "Szablon (JavaScript)",
+      "uk": "Шаблон (JavaScript)",
+      "zh-cn": "模板（JavaScript）"
+    },
+    "desc": {
+      "en": "Template for adapter development",
+      "de": "Vorlage für die Adapterentwicklung",
+      "ru": "Шаблон для разработки адаптера",
+      "pt": "Modelo para desenvolvimento de adaptador",
+      "nl": "Sjabloon voor adapterontwikkeling",
+      "fr": "Modèle pour le développement d'adaptateurs",
+      "it": "Modello per lo sviluppo dell'adattatore",
+      "es": "Plantilla para el desarrollo de adaptadores.",
+      "pl": "Szablon do opracowania adaptera",
+      "uk": "Шаблон для розробки адаптера",
+      "zh-cn": "适配器开发模板"
+    },
+    "authors": [
+      "Author <author@mail.com>"
+    ],
+    "keywords": [
+      "ioBroker",
+      "template",
+      "Smart Home",
+      "home automation"
+    ],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "refoss.png",
+    "enabled": true,
+    "extIcon": "https://bucket-meross-static.meross.com/meross/production/staticfile/image/2024/11/12/reofss/refoss.png",
+    "readme": "https://github.com/Author/ioBroker.template/blob/main/README.md",
+    "loglevel": "info",
+    "tier": 3,
+    "mode": "daemon",
+    "type": "general",
+    "compact": true,
+    "adminUI": {
+      "config": "json",
+      "tab": "materialize"
+    },
+    "adminTab": {
+      "singleton": true,
+      "name": {
+        "en": "RefossTemaplate",
+        "de": "Vorlage (JavaScript)",
+        "ru": "Шаблон (JavaScript)",
+        "pt": "Modelo (JavaScript)",
+        "nl": "Sjabloon (JavaScript)",
+        "fr": "Modèle (JavaScript)",
+        "it": "Modello (JavaScript)",
+        "es": "Plantilla (JavaScript)",
+        "pl": "Szablon (JavaScript)",
+        "uk": "Шаблон (JavaScript)",
+        "zh-cn": "模板（JavaScript）"
+      },
+      "link": "",
+      "fa-icon": "info"
+    },
+    "supportCustoms": true,
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": "7.0.23"
+      }
+    ]
+  },
+  "native": {
+    "port": 9989
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "",
+      "type": "meta",
+      "common": {
+        "name": {
+          "en": "Meta storage for user files",
+          "de": "Meta-Speicher für Benutzerdateien",
+          "ru": "Meta Storage для файлов пользователей",
+          "pt": "Meta de armazenamento para arquivos de usuário",
+          "nl": "Meta opslag voor gebruikersbestanden",
+          "fr": "Stockage Meta pour les fichiers utilisateur",
+          "it": "Meta storage per i file utente",
+          "es": "Meta almacenamiento para archivos de usuario",
+          "pl": "Meta storage for user files",
+          "uk": "Зберігання мета для файлів користувачів",
+          "zh-cn": "用户档案的储存"
+        },
+        "type": "meta.user"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": {
+          "en": "Information",
+          "de": "Information",
+          "ru": "Информация",
+          "pt": "Em formação",
+          "nl": "Informatie",
+          "fr": "Informations",
+          "it": "Informazione",
+          "es": "Información",
+          "pl": "Informacja",
+          "uk": "Інформація",
+          "zh-cn": "信息"
+        }
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "name": {
+          "en": "Devices connected",
+          "de": "Geräte verbunden",
+          "ru": "Приборы подключены",
+          "pt": "Dispositivos conectados",
+          "nl": "Vertaling:",
+          "fr": "Appareils connectés",
+          "it": "Dispositivi connessi",
+          "es": "Dispositivos conectados",
+          "pl": "Device połączone",
+          "uk": "Пристрої підключені",
+          "zh-cn": "连接状态"
+        },
+        "type": "boolean",
+        "role": "indicator.connected",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
+}
